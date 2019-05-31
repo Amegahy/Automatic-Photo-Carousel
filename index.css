@@ -1,0 +1,93 @@
+
+
+/* ==========================================================================
+   Default CSS tags
+   ========================================================================== */
+
+body {
+  background-image: linear-gradient(to bottom right, #5B5B5B, #E0E0E0);
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+/* ==========================================================================
+   Slideshow container
+   ========================================================================== */
+
+
+.slideshow-container {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 100px;
+  height: 370px;
+  position: absolute;
+}
+
+
+/* Container for slideshow images
+   ========================================================================== */
+
+.slides{
+  display: none;
+  height: 370px;
+  -webkit-animation: fade 2s; /* Supports Safari 4+ */
+  -moz-animation:    fade 2s; /* Supports FireFox 5+ */
+  animation:         fade 2s; /* Supports IE 10+ and FireFox 29+ */
+}
+
+
+/* ==========================================================================
+    Fade animation for slideshow images
+   ========================================================================== */
+
+
+@-webkit-keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+/* ==========================================================================
+    Container for index dots on slideshow
+   ========================================================================== */
+
+
+.dot-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/* Individual dots
+   ========================================================================== */
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+/* Active class added to active dot
+   ========================================================================== */
+
+.active {
+  background-color: black;
+}
